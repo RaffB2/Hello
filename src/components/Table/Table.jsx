@@ -46,6 +46,7 @@ const innerMap = (data) => {
       return innerMap(val);
     });
   }
+  // object key is label and object value is data
   return (
     <td data-label={data[0]} key={`${data[1]}`}>
       {data[1]}
@@ -60,6 +61,7 @@ const innerMapKeys = (data) => {
       return innerMapKeys(val);
     });
   }
+  // renders labels as a key
   return (
     <th scope="col" key={`${data[0]}`}>
       {data[0]}
